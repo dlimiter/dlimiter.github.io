@@ -19,11 +19,3 @@ end
 task :server => [:build] do
   system "bundle exec jekyll serve"
 end
-
-task :deploy => [:build] do
-  sh "rsync -av --rsh='ssh -p 2683' _site/ dlimiter@dlimiter.net:public_html/"
-end
-
-task :deploy_to_test => [:build] do
-  sh "rsync -av --rsh='ssh -p 2683' _site/ dlimiter@dlimiter.net:public_html/test/"
-end
