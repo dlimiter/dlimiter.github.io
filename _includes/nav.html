@@ -1,0 +1,26 @@
+<nav id="nav" role="navigation">
+  <a class="nav__toggle" id="nav__close" href="#top">
+    <i class="material-icons md-36">
+      close
+    </i>
+  </a>
+  <div class="pages">
+    {% if include.loc == "/" %}
+      <span class="nav__item -active">Home</span>
+    {% else %}
+      <a href="/" class="nav__item" >Home</a>
+    {% endif %}
+    {% if include.loc == "/resume/" %}
+      <span class="nav__item -active">Resume</span>
+    {% else %}
+      <a href="/resume/" class="nav__item" >Resume</a>
+    {% endif %}
+    {% if include.loc == "/recipes/" %}
+      <!-- <span class="nav__item -current -active">Recipes</span> -->
+    {% else %}
+
+      <!-- <a href="/recipes/" class="nav__item">Recipes</a> -->
+    {% endif %}
+  </div>
+</nav>
+

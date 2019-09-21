@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    {% include nav.html loc=page.permalink %}
+
+    <section class="main">
+      {% include titlebar.html loc=page.permalink %}
+
+      {{ content }}
+
+      {% include footer.html %}
+    </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/dlimiter.js"></script>
+  </body>
+</html>

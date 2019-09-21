@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="container -alternate1">
+  <div class="">
+    <h1>{{ page.title }}</h1>
+    <p class="lede">
+      {{ page.description }}
+    </p>
+
+  </div>
+</div>
+<div class="container recipe">
+  <section class="recipe__section">
+    <div class="recipe__details">
+      {% unless page.author == nil %}
+        <p><strong>{{ page.author }}</strong></p>
+      {% endunless %}
+      {% unless page.serves == nil %}
+        <p>{{ page.serves }}</p>
+      {% endunless %}
+      {% unless page.source == nil %}
+        <p><a href="{{ page.source }}">Source</a></p>
+      {% endunless %}
+    </div>
+    <div class="recipe__ingredients">
+      {% unless page.ingredients == nil %}
+        {% for ingredient in page.ingredients %}
+          <p>{{ ingredient }}</p>
+        {% endfor %}
+      {% else %}
+          <p>None</p>
+      {% endunless %}
+    </div>
+  </section>
+  <section class="recipe__section recipe__method">
+    {{ content }}
+  </section>
+  <section class="recipe__footer">
+    <a href="/recipes/">&larr; All recipes</a>
+  </section>
+
+</div>

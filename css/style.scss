@@ -1,0 +1,372 @@
+---
+---
+@import 'normalize';
+
+@mixin fface($name, $filename, $weight) {
+  @font-face {
+    font-family: $name;
+    src:  url('/fonts/'+ $filename +'.woff2') format('woff2'),
+          url('/fonts/'+ $filename +'.woff') format('woff');
+    font-weight: $weight;
+  }
+}
+
+@include fface('Space Grotesk', 'SpaceGrotesk-Light', 300);
+@include fface('Space Grotesk', 'SpaceGrotesk-Regular', 400);
+@include fface('Space Grotesk', 'SpaceGrotesk-Medium', 500);
+@include fface('Space Grotesk', 'SpaceGrotesk-SemiBold', 600);
+@include fface('Space Grotesk', 'SpaceGrotesk-Bold', 700);
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700');
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+$pink: #f1bec0;
+$nav-width: 250px;
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+$hairline: 0.5px solid black;
+
+.section-divider {
+  border-bottom: $hairline;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+}
+
+footer {
+  margin: 2em 0;
+  text-align: left;
+  .footer__content {
+    border-top: $hairline;
+    margin-top:2em;
+    padding-top: 2em;
+    margin-bottom: 1em;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: 0.1s all ease-in-out;
+  position: relative;
+  display: inline-block;
+  &:before, &:after {
+    will-change: transform;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+  &:before {
+    transition: 0.15s all ease-out;
+    transform-origin: 0 1em;
+    top: -4%;
+    left: 0%;
+    width: 100%;
+    height: 108%;
+    background: tint($pink, 50%);
+    transform: scaleY(.2);
+  }
+  &:hover {
+    &:before {
+      transform: none;
+    }
+  }
+}
+
+p {
+  margin-top: 0;
+}
+
+h1, h2,
+.h1, .h2,  {
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+strong {
+  font-weight: 600;
+}
+
+h3, h4,
+.h3, .h4 {
+  font-weight: 700;
+}
+
+.h1, .h2, .h3, .h4 {
+  margin-top: 0;
+}
+
+.h0 {
+  font-size: 2.6rem;
+}
+
+
+h1, .h1 {
+  font-size: 2rem;
+}
+
+h2, .h2 {
+  font-size: 1.6rem;
+}
+
+h3, .h3 {
+  font-size: 1.4rem;
+}
+
+h4, .h4 {
+  font-size: 1.2rem;
+}
+
+.colspan-2 {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+
+
+.colspan-3 {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+}
+
+.about {
+  @extend .h1;
+  font-size: 2.4rem;
+}
+
+.lede {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.mono {
+  font-family: 'Space Mono', monospace;
+}
+
+.resumeitem {
+  margin-bottom: 2rem;
+}
+
+.resumeitem__heading {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.resumeitem__date {
+  @extend .mono;
+  // text-transform: uppercase;
+  font-size: 0.95em;
+  // letter-spacing: 0.05em;
+  margin: 0.5em 0;
+}
+
+.container {
+  max-width: 60em;
+  margin: auto;
+  padding: 0 32px;
+  display: grid;
+  grid-column-gap:80px;
+  grid-template-columns: 1fr;
+  @media only screen and (min-width: 60em) {
+    grid-template-columns: 2fr 3fr;
+  }
+  &.-alternate1{
+    @media only screen and (min-width: 60em) {
+      grid-template-columns: 4fr 1fr;
+    }
+  }
+  &.-reverse {
+    @media only screen and (min-width: 60em) {
+      grid-template-columns: 3fr 2fr;
+    }
+  }
+  &.-titlebar {
+    grid-template-columns: 1fr;
+    @media only screen and (min-width: 80em) {
+      grid-template-columns: 4fr 1fr;
+    }
+  }
+  &.recipe {
+    .recipe__ingredients {
+      @extend .section-divider;
+      @extend .mono;
+      font-size: 0.9em;
+    }
+    @media only screen and (min-width: 60em) {
+      .recipe__ingredients {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.titlebar {
+  grid-template-columns: 1fr;
+  text-align: right;
+  line-height: 2.1;
+  @media only screen and (min-width: 80em) {
+    text-align: left;
+  }
+}
+
+
+
+
+.nav__logo {
+  font-size: 1.2rem;
+  @extend .mono;
+  font-weight: 400;
+  line-height: 4;
+  display: inline-block;
+  padding: 0 2rem;
+  @media only screen and (min-width: 70em) {
+    padding: 0;
+  }
+}
+
+.nav__logo,
+.nav__toggle {
+  color: black;
+  text-decoration: none;
+  vertical-align: middle;
+  &:before {
+    content: none;
+  }
+  &:hover {
+    color: black;
+  }
+  &:active {
+    color: black;
+  }
+  &:visited {
+    color: black;
+  }
+}
+
+.nav__toggle i {
+  padding: 1rem;
+}
+
+#nav {
+  background: tint($pink, 70%);
+  width: $nav-width;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -$nav-width;
+  transition: all .3s ease;
+  padding: 8px;
+}
+
+#nav__toggle {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  transition: all .3s ease;
+}
+
+/* Off Canvas Navigation */
+.main {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  transition: .3s ease all;
+}
+
+.show-nav #nav,
+.show-nav .main {
+  transform: translateX($nav-width);
+}
+
+
+.nav__item {
+  @extend .mono;
+  font-size: 1.2rem;
+  color: shade($pink, 70%);
+  text-decoration: none;
+  vertical-align: middle;
+  display: block;
+  font-weight: 400;
+  padding: 1em 1em;
+  &:before {
+    content: none;
+  }
+  &:visited {
+    color: shade($pink, 70%);
+  }
+  &:hover {
+    color: shade($pink, 40%);
+  }
+  &:active {
+     color: shade($pink, 40%);
+  }
+  &.-active {
+    color: shade($pink, 80%) !important;
+    &:active,
+    &:visited,
+    &:hover,
+    &:active {
+      color: shade($pink, 70%);
+    }
+  }
+}
+
+.recipe {
+  .recipe__details {
+    @extend .section-divider;
+  }
+
+  .recipe__footer {
+    margin-top: 2rem;
+  }
+}
+
+.cooksnote {
+  margin: 2rem 0 3rem;
+  $col: tint($pink, 88%);
+  background: $col;
+  color: shade($pink, 40%);
+  outline: 1rem solid $col;
+  position: relative;
+  z-index: -1;
+  padding-top: 1rem;
+  &:before {
+    content: "Cooks note";
+    position: absolute;
+    top: -0.5em;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+}
+
+.small {
+  font-size: .8rem;
+}
