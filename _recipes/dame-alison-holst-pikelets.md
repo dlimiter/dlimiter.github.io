@@ -2,7 +2,7 @@
 title: Pikelets
 description: Nabbed and adapted from a waiting room cookbook.
 author: Dame Alison Holst
-serves: Serves 4
+serves: About 12 pikelets
 ingredients:
 - 1 cup self raising flour
 - 1 large egg
@@ -27,4 +27,3 @@ Cook in batches until all batter is used. Keep cooked pikelets warm in clean tea
 Depends on the butter, but I think a pinch of salt wouldn't hurt.
   </p>
 </div>
-
