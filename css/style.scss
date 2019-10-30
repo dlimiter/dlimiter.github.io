@@ -21,7 +21,7 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700');
 
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i&display=swap');
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
@@ -254,7 +254,7 @@ h4, .h4 {
   // @extend .mono;
   text-transform: uppercase;
   font-weight: 400;
-  line-height: 4;
+  line-height: 4.2;
   display: inline-block;
   //padding: 0 2rem;
   @media only screen and (min-width: 70em) {
