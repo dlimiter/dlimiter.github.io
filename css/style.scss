@@ -2,23 +2,7 @@
 ---
 @import 'normalize';
 
-@mixin fface($name, $filename, $weight) {
-  @font-face {
-    font-family: $name;
-    src:  url('/fonts/'+ $filename +'.woff2') format('woff2'),
-          url('/fonts/'+ $filename +'.woff') format('woff');
-    font-weight: $weight;
-  }
-}
-
-@include fface('Space Grotesk', 'SpaceGrotesk-Light', 300);
-@include fface('Space Grotesk', 'SpaceGrotesk-Regular', 400);
-@include fface('Space Grotesk', 'SpaceGrotesk-Medium', 500);
-@include fface('Space Grotesk', 'SpaceGrotesk-SemiBold', 600);
-@include fface('Space Grotesk', 'SpaceGrotesk-Bold', 700);
-
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700');
 
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i&display=swap');
@@ -28,6 +12,7 @@
 .material-icons.md-48 { font-size: 48px; }
 
 $pink: #f1bec0;
+$charcoal: #333;
 $nav-width: 250px;
 
 @function tint($color, $percentage) {
@@ -38,7 +23,7 @@ $nav-width: 250px;
   @return mix(black, $color, $percentage);
 }
 
-$hairline: 0.5px solid black;
+$hairline: 0.5px solid $charcoal;
 
 .section-divider {
   border-bottom: $hairline;
@@ -57,25 +42,16 @@ html {
 body {
   font-family: 'Rubik', 'Space Grotesk', sans-serif;
   font-weight: 300;
-}
-
-footer {
-  margin: 2em 0;
-  text-align: left;
-  .footer__content {
-    border-top: $hairline;
-    margin-top:2em;
-    padding-top: 2em;
-    margin-bottom: 1em;
-  }
+  color: $charcoal;
 }
 
 a {
-  color: black;
+  color: $charcoal;
   text-decoration: none;
   transition: 0.1s all ease-in-out;
   position: relative;
   display: inline-block;
+  z-index: 0;
   &:before, &:after {
     will-change: transform;
     content: "";
@@ -90,12 +66,35 @@ a {
     left: 0%;
     width: 100%;
     height: 108%;
-    background: tint($pink, 50%);
+    background: tint($pink, 30%);
     transform: scaleY(.2);
   }
   &:hover {
     &:before {
       transform: none;
+      background: tint($pink, 50%);
+    }
+  }
+}
+
+
+footer {
+  margin-bottom: 4rem;
+  text-align: left;
+  z-index: -1;
+  .footer__content {
+    margin-top:2em;
+    padding-top: 2em;
+    margin-bottom: 1em;
+  }
+  a {
+    &:before {
+      background: tint($pink, 50%);
+    }
+    &:hover {
+      &:before {
+        background: tint($pink, 70%);
+      }
     }
   }
 }
@@ -246,9 +245,6 @@ h4, .h4 {
   }
 }
 
-
-
-
 .nav__logo {
   font-size: 1.2rem;
   // @extend .mono;
@@ -265,20 +261,20 @@ h4, .h4 {
 
 .nav__logo,
 .nav__toggle {
-  color: black;
+  color: $charcoal;
   text-decoration: none;
   vertical-align: middle;
   &:before {
     content: none;
   }
   &:hover {
-    color: black;
+    color: $charcoal;
   }
   &:active {
-    color: black;
+    color: $charcoal;
   }
   &:visited {
-    color: black;
+    color: $charcoal;
   }
 }
 
@@ -287,7 +283,9 @@ h4, .h4 {
 }
 
 #nav {
-  background: tint($pink, 70%);
+  //background: tint($pink, 70%);
+  background: $charcoal;
+  color: white;
   width: $nav-width;
   height: 100%;
   position: fixed;
@@ -295,6 +293,17 @@ h4, .h4 {
   left: -$nav-width;
   transition: all .3s ease;
   padding: 8px;
+  a {
+    color: white;
+    &:before {
+      background: tint($pink, 50%);
+    }
+    &:hover {
+      &:before {
+        transform: none;
+      }
+    }
+  }
 }
 
 #nav__toggle {
@@ -312,20 +321,25 @@ h4, .h4 {
   transition: .3s ease all;
 }
 
+.top {
+  background: tint($pink, 80%);
+  padding-bottom: 4rem;
+  z-index: -1;
+}
+
 .show-nav #nav,
 .show-nav .main {
   transform: translateX($nav-width);
 }
 
-
-.nav__item {
-  @extend .mono;
+a.nav__item {
+  //@extend .mono;
   font-size: 1.2rem;
   color: shade($pink, 70%);
   text-decoration: none;
   vertical-align: middle;
   display: block;
-  font-weight: 400;
+  font-weight: 300;
   padding: 1em 1em;
   &:before {
     content: none;

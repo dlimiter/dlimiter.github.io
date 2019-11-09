@@ -14,11 +14,12 @@
   </head>
   <body>
     {% include nav.html loc=page.permalink %}
-
     <section class="main">
-      {% include titlebar.html loc=page.permalink %}
+      <section class="top">        
+        {% include titlebar.html loc=page.permalink %}
 
-      {{ content }}
+        {{ content }}
+      </section>
 
       {% include footer.html %}
     </section>
