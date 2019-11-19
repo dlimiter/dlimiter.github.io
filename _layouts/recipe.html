@@ -2,17 +2,11 @@
 layout: default
 ---
 
-<div class="container -alternate2">
-  <div class="">
-    <h1>{{ page.title }}</h1>
-    <p class="lede">
-      {{ page.description }}
-    </p>
-
-  </div>
-</div>
 <div class="container recipe">
-  <section class="recipe__section">
+  <section class="recipe__section recipe__meta">
+    <div class="recipe__title">
+      <h1>{{ page.title }}</h1>
+    </div>
     <div class="recipe__details">
       {% unless page.author == nil %}
         <p><strong>{{ page.author }}</strong></p>
@@ -35,6 +29,9 @@ layout: default
     </div>
   </section>
   <section class="recipe__section recipe__method">
+    <p class="lede">
+      {{ page.description }}
+    </p>
     {{ content }}
   </section>
   <section class="recipe__footer">
