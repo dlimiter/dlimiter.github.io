@@ -24,6 +24,7 @@ $nav-width: 250px;
   @return mix(black, $color, $percentage);
 }
 
+$pink-text: shade($pink, 12%);
 $hairline: 1px solid tint($pink, 20%);
 
 .section-divider {
@@ -288,6 +289,7 @@ h3, .h3 {
 .nav__logo,
 .nav__toggle {
   color: $text;
+  color: $pink-text;
   text-decoration: none;
   vertical-align: middle;
   &:before {
@@ -295,12 +297,15 @@ h3, .h3 {
   }
   &:hover {
     color: $text;
+    color: shade($pink-text,10%);
   }
   &:active {
     color: $text;
+    color: shade($pink-text,10%);
   }
   &:visited {
     color: $text;
+    color: shade($pink-text, 10%);
   }
 }
 
