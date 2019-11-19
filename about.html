@@ -3,13 +3,22 @@ title: About
 layout: default
 ---
 <div class="container recipe">
-  <div class="">
     <div class="recipe__title">
       <h1>{{ page.title }}</h1>
     </div>
-    <p class="recipe__ingredients">
-      Melbourne based product &amp; graphic designer, sometimes front-end developer &amp; dumpling enthusiast.
-    </p>
+    <div class="section-divider">
+      <p class="">
+        Melbourne based product &amp; graphic designer and sometimes front-end developer.
+      </p>
+      <p>
+        Also dabbles in illustration, lettering, crochet and other practical craft. Keen dumpling enthusiast.
+      </p>
+    </div>
+  </div>
+
+<div class="container recipe">
+  <div class="recipe__title">
+    <h1>Work</h1>
   </div>
 
   <div class="">
@@ -49,23 +58,29 @@ layout: default
       %}
 
     </div>
-    <div>
-
-
-      {% include resumeitem.html
-        date = "2011&mdash;2013"
-        role = "Graduate Diploma of Graphic Design"
-        employer = "<a href='https://www.rmit.edu.au'>RMIT</a>"
-        description = "Melbourne, Victoria"
-
-      %}
-      {% include resumeitem.html
-        date = "2002&mdash;2004"
-        role = "Bachelor of Computer Science"
-        employer = "<a href='https://www.adelaide.edu.au'>University of Adelaide</a>"
-        description = "Adelaide, South Australia"
-      %}
-    </div>
+  </div>
+</div>
+<div class="container recipe">
+  <div class="recipe__title">
+    <h1>Study</h1>
   </div>
 
+
+  <div>
+
+
+    {% include resumeitem.html
+      date = "2011&mdash;2013"
+      role = "Graduate Diploma of Graphic Design"
+      employer = "<a href='https://www.rmit.edu.au'>RMIT</a>"
+      description = "Melbourne, Victoria"
+
+    %}
+    {% include resumeitem.html
+      date = "2002&mdash;2004"
+      role = "Bachelor of Computer Science"
+      employer = "<a href='https://www.adelaide.edu.au'>University of Adelaide</a>"
+      description = "Adelaide, South Australia"
+    %}
+  </div>
 </div>
