@@ -232,6 +232,9 @@ h3, .h3 {
   }
   &.section-divider {
     margin-bottom: 2em;
+    &.-nudge {
+      padding-bottom: 1em;
+    }
   }
   &.recipe {
     @media only screen and (min-width: 80em) {
