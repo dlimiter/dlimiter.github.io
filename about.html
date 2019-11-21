@@ -2,62 +2,60 @@
 title: About
 layout: default
 ---
-<div class="container recipe">
-    <div class="recipe__title">
-      <h1>{{ page.title }}</h1>
-    </div>
-    <div class="section-divider">
-      <p class="">
-        Melbourne based product &amp; graphic designer and sometimes front-end developer.
-      </p>
-      <p>
-        Also dabbles in illustration, lettering, crochet and other practical craft. Keen dumpling enthusiast.
-      </p>
-    </div>
-  </div>
 
-<div class="container recipe">
+<div class="container recipe section-divider">
+  <div class="recipe__title">
+    <h1>{{ page.title }}</h1>
+  </div>
+  <div class="">
+    <p class="">
+      Melbourne based product &amp; graphic designer and sometimes front-end developer.
+    </p>
+    <p>
+      Also dabbles in illustration, lettering, crochet and other practical craft. Keen dumpling enthusiast.
+    </p>
+  </div>
+</div>
+
+<div class="container recipe section-divider">
   <div class="recipe__title">
     <h1>Work</h1>
   </div>
 
   <div class="">
-    <div class="section-divider">
 
-      {% include resumeitem.html
-        date = "2014&mdash;Now"
-        role = "Lead Product Designer"
-        employer = "<a href='https://www.cultureamp.com'>Culture Amp</a>"
-        description = "Product design, UI and UX design, visual design, illustration, front-end development. Camp (Tribe) and practice leadership. Product management &amp; customer enablement."
-      %}
-      {% include resumeitem.html
-        date = "2013&mdash;2014"
-        role = "Senior Experience Designer"
-        employer = "<a href='http://symplicit.com.au'>Symplicit</a>"
-        description = "Visual design, illustration, web and UI design, UX research and design, front-end development."
-      %}
-      {% include resumeitem.html
-        date = "2011&mdash;Now"
-        role = "Designer"
-        employer = "Freelance"
-        description = "Print and identity design, illustration, web and UI design, front-end development."
-      %}
-      {% include resumeitem.html
-        date = "2012&mdash;2013"
-        role = "Web App &amp; UI Team Lead"
-        employer = "<a href='https://www.unico.com.au'>Unico</a>"
-        description = "Resourcing, technical/professional mentoring, training, development
-          and performance management of team. Strategic development of the team practice and process."
-      %}
-      {% include resumeitem.html
-        date = "2005&mdash;2012"
-        role = "Consultant"
-        employer = "<a href='https://www.unico.com.au'>Unico</a>"
-        description = "Software development, business process and practice consulting.
-          UI & UX design, web design/development, web application development and print design."
-      %}
-
-    </div>
+    {% include resumeitem.html
+      date = "2014&mdash;Now"
+      role = "Lead Product Designer"
+      employer = "<a href='https://www.cultureamp.com'>Culture Amp</a>"
+      description = "Product design, UI and UX design, visual design, illustration, front-end development. Camp (Tribe) and practice leadership. Product management &amp; customer enablement."
+    %}
+    {% include resumeitem.html
+      date = "2013&mdash;2014"
+      role = "Senior Experience Designer"
+      employer = "<a href='http://symplicit.com.au'>Symplicit</a>"
+      description = "Visual design, illustration, web and UI design, UX research and design, front-end development."
+    %}
+    {% include resumeitem.html
+      date = "2011&mdash;Now"
+      role = "Designer"
+      employer = "Freelance"
+      description = "Print and identity design, illustration, web and UI design, front-end development."
+    %}
+    {% include resumeitem.html
+      date = "2012&mdash;2013"
+      role = "Web App &amp; UI Team Lead"
+      employer = "<a href='https://www.unico.com.au'>Unico</a>"
+      description = "Resourcing, technical/professional mentoring, training, development
+        and performance management of team. Strategic development of the team practice and process."
+    %}
+    {% include resumeitem.html
+      date = "2005&mdash;2012"
+      role = "Consultant"
+      employer = "<a href='https://www.unico.com.au'>Unico</a>"
+      description = "Software development, business process and practice consulting.
+        UI & UX design, web design/development, web application development and print design."
+    %}
   </div>
 </div>
 <div class="container recipe">

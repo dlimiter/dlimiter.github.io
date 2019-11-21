@@ -29,13 +29,15 @@ layout: default
     </div>
   </section>
   <section class="recipe__section recipe__method">
-    <p class="lede">
-      {{ page.description }}
-    </p>
+    {% unless page.description == nil %}
+      <p class="lede">
+        {{ page.description }}
+      </p>
+    {% endunless %}
     {{ content }}
   </section>
+
   <section class="recipe__footer">
     <a href="/recipes/">&larr; All recipes</a>
   </section>
-
 </div>
