@@ -117,17 +117,18 @@ p {
 
 h1, h2,
 .h1, .h2,  {
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.3;
+  letter-spacing: -0.02em;
 }
 
 strong {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 h3, h4,
 .h3, .h4 {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .h1, .h2, .h3, .h4 {
@@ -174,7 +175,7 @@ h3, .h3 {
 
 .lede {
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 2rem;
 }
 
@@ -189,7 +190,7 @@ h3, .h3 {
 }
 
 .resumeitem__heading {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.1rem;
 }
 
@@ -239,6 +240,12 @@ h3, .h3 {
   &.recipe {
     @media only screen and (min-width: 80em) {
       grid-template-columns: 1fr 2fr ;
+    }
+    .recipe__link-header {
+      @media only screen and (min-width: 80em) {
+        position: absolute;
+        top: 1em;
+      }
     }
     .recipe__title {
       @media only screen and (min-width: 80em) {
@@ -430,4 +437,8 @@ a.nav__item {
   color: tint($text, 30%);
   padding: 0 0.1rem;
   font-weight: 300;
+}
+
+.recipe__footer {
+  margin-top: 2em;
 }
