@@ -12,10 +12,6 @@
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
-$pink: #f1bec0;
-$charcoal: #333;
-$text: $charcoal;
-$nav-width: 250px;
 
 @function tint($color, $percentage) {
   @return mix(white, $color, $percentage);
@@ -25,8 +21,18 @@ $nav-width: 250px;
   @return mix(black, $color, $percentage);
 }
 
+$pink: #f1bec0;
+$charcoal: #333;
+$text: tint($charcoal, 10%);
+$text-display: tint($charcoal, 20%);
+$nav-width: 250px;
+
 $pink-text: shade($pink, 12%);
+$pink-text-2: shade($pink, 40%);
 $hairline: 1px solid tint($pink, 20%);
+
+$link-hover-1: tint($pink, 40%);
+$link-hover-2: tint($pink, 60%);
 
 .section-divider {
   border-bottom: $hairline;
@@ -46,7 +52,7 @@ $hairline: 1px solid tint($pink, 20%);
   box-sizing: border-box;
 }
 html {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -58,6 +64,7 @@ body {
 
 a {
   color: $text;
+  color: $pink-text-2;
   text-decoration: none;
   transition: 0.1s all ease-in-out;
   position: relative;
@@ -77,17 +84,16 @@ a {
     left: 0%;
     width: 100%;
     height: 108%;
-    background: tint($pink, 30%);
+    background: $link-hover-1;
     transform: scaleY(.2);
   }
   &:hover {
     &:before {
       transform: none;
-      background: tint($pink, 50%);
+      background: $link-hover-2;
     }
   }
 }
-
 
 footer {
   margin-bottom: 4rem;
@@ -97,16 +103,6 @@ footer {
     margin-top:2em;
     padding-top: 2em;
     margin-bottom: 1em;
-  }
-  a {
-    &:before {
-      background: tint($pink, 50%);
-    }
-    &:hover {
-      &:before {
-        background: tint($pink, 70%);
-      }
-    }
   }
 }
 
@@ -131,8 +127,10 @@ h3, h4,
   font-weight: 400;
 }
 
+h1, h2, h3, h4,
 .h1, .h2, .h3, .h4 {
   margin-top: 0;
+  color: $text-display;
 }
 
 .h0 {
@@ -152,6 +150,9 @@ h3, .h3 {
   font-size: 1.4rem;
 }
 
+h4, .h4 {
+  font-size: 1.2rem;
+}
 
 .colspan-2 {
   grid-column-start: 1;
@@ -168,13 +169,14 @@ h3, .h3 {
   @extend .h1;
   font-size: 1.8rem;
   margin-top: 2rem;
+
   @media only screen and (min-width: 40em) {
     font-size: 2.7rem;
   }
 }
 
 .lede {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 2rem;
 }
@@ -190,14 +192,11 @@ h3, .h3 {
 }
 
 .resumeitem__heading {
-  font-weight: 600;
-  font-size: 1.1rem;
+  @extend h4;
 }
 
 .resumeitem__date {
   @extend .mono;
-  // text-transform: uppercase;
-  // letter-spacing: 0.05em;
   margin: 0 0 0.5rem 0;
 }
 
@@ -241,10 +240,13 @@ h3, .h3 {
     @media only screen and (min-width: 80em) {
       grid-template-columns: 1fr 2fr ;
     }
-    .recipe__link-header {
+    .recipe__back-link {
+      position: relative;
+      top: -.25rem;
       @media only screen and (min-width: 80em) {
         position: absolute;
-        top: 1em;
+        left: -3rem;
+        top: .2rem;
       }
     }
     .recipe__title {
@@ -266,6 +268,31 @@ h3, .h3 {
         margin-bottom: 0;
         padding-bottom: 0;
       }
+    }
+  }
+}
+
+.recipe__title {
+  position: relative;
+  .recipe__back-link {
+    $dim: 2rem;
+    color: $pink-text;
+    font-weight: 400;
+    font-size: 1.2rem;
+    display: inline-block;
+    height: $dim;
+    width: $dim;
+    background: $link-hover-2;
+    line-height:0.95 * $dim;
+    text-align: center;
+    border-radius: $dim/2;
+    &:before {
+      content:none;
+    }
+    &:hover {
+      background: $link-hover-1;
+      color: shade($pink-text, 5%);
+      transform: scale(1.2);
     }
   }
 }
@@ -292,7 +319,6 @@ h3, .h3 {
 
 .nav__logo,
 .nav__toggle {
-  color: $text;
   color: $pink-text;
   text-decoration: none;
   vertical-align: middle;
@@ -300,16 +326,12 @@ h3, .h3 {
     content: none;
   }
   &:hover {
-    color: $text;
     color: shade($pink-text,10%);
   }
   &:active {
-    color: $text;
     color: shade($pink-text,10%);
   }
   &:visited {
-    color: $text;
-    color: shade($pink-text, 10%);
   }
 }
 
@@ -318,9 +340,8 @@ h3, .h3 {
 }
 
 #nav {
-  //background: tint($pink, 70%);
-  background: $text;
-  color: white;
+  background: $charcoal;
+  // color: white;
   width: $nav-width;
   height: 100%;
   position: fixed;
@@ -329,14 +350,9 @@ h3, .h3 {
   transition: all .3s ease;
   padding: 8px;
   a {
-    color: white;
-    &:before {
-      background: tint($pink, 50%);
-    }
+    color: shade(white, 20%);
     &:hover {
-      &:before {
-        transform: none;
-      }
+       color: white;
     }
   }
 }
@@ -369,7 +385,6 @@ h3, .h3 {
 }
 
 a.nav__item {
-  //@extend .mono;
   font-size: 1.2rem;
   color: shade($pink, 70%);
   text-decoration: none;
@@ -379,24 +394,6 @@ a.nav__item {
   padding: 1em 1em;
   &:before {
     content: none;
-  }
-  &:visited {
-    color: shade($pink, 70%);
-  }
-  &:hover {
-    color: shade($pink, 40%);
-  }
-  &:active {
-     color: shade($pink, 40%);
-  }
-  &.-active {
-    color: shade($pink, 80%) !important;
-    &:active,
-    &:visited,
-    &:hover,
-    &:active {
-      color: shade($pink, 70%);
-    }
   }
 }
 
@@ -409,13 +406,9 @@ a.nav__item {
 .cooksnote {
   margin: 2rem 0 3rem;
   $col: tint($pink, 70%);
-  // background: $col;
-  //border-left: 7px solid tint($pink, 30%);
   border-radius: 5px;
   color: shade($pink, 30%);
-  // outline: 1rem solid $col;
   position: relative;
-  // z-index: -1; Why did I do this?
   padding-top: 1rem;
 
   &:before {
