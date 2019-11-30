@@ -1,6 +1,6 @@
 ---
 title: White peach &amp; elderflower cooler
-description: Gorgeous punch via Marc &amp; Aaron
+description: Summer punch via Marc &amp; Aaron
 author: Donna Hay
 source: https://www.donnahay.com.au/recipes/entertaining/white-peach-and-elderflower-cooler
 serves: Serves 6
