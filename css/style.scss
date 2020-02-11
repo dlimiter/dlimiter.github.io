@@ -114,11 +114,6 @@ footer {
   margin-bottom: 4rem;
   text-align: left;
   z-index: -1;
-  .footer__content {
-    margin-top:2em;
-    padding-top: 2em;
-    //margin-bottom: 1em;
-  }
 }
 
 p {
@@ -255,16 +250,19 @@ h4, .h4 {
     }
   }
   &.recipe1 {
-    grid-template-columns: 1fr 2fr ;
+    grid-template-columns: 2fr 3fr;
+    @media only screen and (min-width: 60em) {
+      grid-template-columns: 1fr 2fr ;
+    }
   }
   &.recipe {
-    @media only screen and (min-width: 80em) {
+    @media only screen and (min-width: 60em) {
       grid-template-columns: 1fr 2fr ;
     }
     .recipe__back-link {
       position: relative;
       top: -.25rem;
-      @media only screen and (min-width: 80em) {
+      @media only screen and (min-width: 60em) {
         position: absolute;
         left: -3rem;
         top: 0;
@@ -404,3 +402,7 @@ a.nav__logo {
      text-align: right;
    }
  }
+
+.nowrap {
+  white-space: nowrap;
+}
