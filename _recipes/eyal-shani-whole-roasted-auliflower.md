@@ -1,5 +1,5 @@
 ---
-title: Whole roasted cauliflower
+title: Whole roasted cauliflower
 description: Renowned chefs around the world all have their own variations of Shani’s signature whole roasted cauliflower. Here’s the version popularized by the chef himself, as published in Haaretz 10 years ago. 
 
 author: Eyal Shani & Miri Hanoch
