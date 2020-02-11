@@ -80,7 +80,7 @@ body {
 a {
   color: $text;
   text-decoration: none;
-  transition: 0.1s all ease-in-out;
+  transition: 0.1s color transform ease-in-out;
   position: relative;
   display: inline-block;
   z-index: 0;
@@ -92,7 +92,7 @@ a {
     z-index: -1;
   }
   &:before {
-    transition: 0.15s all ease-out;
+    transition: 0.15s transform ease-out;
     transform-origin: 0 1em;
     top: -4%;
     left: 0%;
@@ -149,7 +149,7 @@ h1, h2, h3, h4,
 }
 
 .h0 {
-  font-size: 2.2rem;
+  font-size: 2.25rem;
   line-height: 1.2;
 }
 
@@ -183,7 +183,7 @@ h4, .h4 {
 
 .about {
   @extend .h0;
-  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .lede {
@@ -319,7 +319,7 @@ h4, .h4 {
 }
 
 .titlebar {
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
   padding: 2rem 0;
   @media only screen and (min-width: 80em) {
     text-align: left;
@@ -401,6 +401,6 @@ a.nav__logo {
  .navs {
    text-align: right;
    @media only screen and (min-width: 60em) {
-     text-align: left;
+     text-align: right;
    }
  }
