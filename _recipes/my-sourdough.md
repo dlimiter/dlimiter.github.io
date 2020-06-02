@@ -10,9 +10,6 @@ ingredients:
 - 240g water
 ---
 
-
-
-
 #### Feed starter
 When to feed depends on a lot of variables like the liveliness of the starter and the ambient temperature, but you want to time it so that the starter is at its peak (at least double in size, rounded top, passes the float test) when you start the autolyse.  
 
