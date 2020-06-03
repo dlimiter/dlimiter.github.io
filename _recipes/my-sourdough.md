@@ -14,10 +14,10 @@ ingredients:
 When to feed depends on a lot of variables like the liveliness of the starter and the ambient temperature, but you want to time it so that the starter is at its peak (at least double in size, rounded top, passes the float test) when you start the autolyse.  
 
 #### Autolyse
-Dissolve the starter in about 200g of the water. Mix well with the flour, and put in a covered bowl in a warm place for 45 minutes to an hour.
+Mix water well with the flour, and put in a covered bowl in a warm place for 45 minutes to an hour.
 
 #### Mix & fold
-Dissolve the salt in the remaining water, and mix into the autolysed dough. This gets pretty messy so once it's starting to come together I usually slap-folds until the dough starts to bind to itself and develop a bit of structure.
+Mix salt and starter into the autolysed dough. Stretch and fold the dough as you mix until it develops some structure.
 
 Cover the bowl and place in a warm place for two to three hours, with a stretch and fold every half hour.
 
