@@ -48,6 +48,8 @@ $hairline: 1px solid tint($pink, 20%);
 $link-hover-1: tint($pink, 40%);
 $link-hover-2: tint($pink, 60%);
 
+$base-font-size: 20px;
+
 .section-divider {
   border-bottom: $hairline;
   margin-bottom: 2em;
@@ -67,6 +69,9 @@ $link-hover-2: tint($pink, 60%);
 }
 html {
   font-size: 16px;
+  @media only screen and (min-width: 60em) {
+    font-size: $base-font-size;
+  }
   line-height: 1.5;
 }
 
@@ -256,6 +261,7 @@ h4, .h4 {
   }
   &.recipe1 {
     grid-template-columns: 2fr 3fr;
+    grid-column-gap: 1rem;
     @media only screen and (min-width: 60em) {
       grid-template-columns: 1fr 2fr ;
     }
@@ -328,7 +334,7 @@ h4, .h4 {
 
 .titlebar {
   margin-bottom: 6rem;
-  padding: 2rem 0;
+  padding: 1rem 0;
   @media only screen and (min-width: 80em) {
     text-align: left;
   }
