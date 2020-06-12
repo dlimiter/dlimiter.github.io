@@ -66,6 +66,10 @@ $recipe1-pad: 3rem;
   }
 }
 
+#arrow {
+  fill: $text;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
