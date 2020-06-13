@@ -49,7 +49,7 @@ $link-hover-1: tint($pink, 40%);
 $link-hover-2: tint($pink, 60%);
 
 //$base-font-size: 20px;
-$base-font-size: 1.5vw;
+$base-font-size: 1.4vw;
 $recipe1-pad: 3rem;
 
 .section-divider {
@@ -199,7 +199,7 @@ h4, .h4 {
 }
 
 .lede {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 400;
   margin-bottom: 2rem;
 }
@@ -349,7 +349,7 @@ h4, .h4 {
   padding: 2.5rem 0;
   @media only screen and (min-width: 80em) {
     text-align: left;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 }
 
