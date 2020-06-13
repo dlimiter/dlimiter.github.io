@@ -1,6 +1,6 @@
 ---
 title: Braised chicken with root vegetables
-description: This dish is our weekday go-to comfort food that can be made with very simple ingredients and not a lot of time or effort. Our friends cooked us a similar dish on our last trip to Japan and I’m completely hooked. The chicken is braised with onion, carrots and potatoes in a lightly perfumed broth until they are tender and sweet. It is home-style food and I love it dearly. <br/><br/>Making your own dashi (stock) creates a wonderfully smoky base for the braise and only takes a few minutes. If you can’t get your hands on dried bonito flakes, simply use water instead. You can also vary the vegetables depending on the season – sweet potatoes, sturdy greens and snap peas or beans would work well too.
+description: Weekday home-style comfort food that can be made with very simple ingredients and not a lot of time or effort. You can also vary the vegetables depending on the season – sweet potatoes, sturdy greens and snap peas or beans would work well too.
 author: Julia Busuttil Nishimura
 source: http://assemblepapers.com.au/2017/07/20/braised-chicken-with-root-vegetables/
 serves: Serves 4
@@ -28,4 +28,3 @@ When the chicken is nice and golden, add in the onions and stir to coat, cooking
 Remove the lid and sprinkle in the sugar, followed by the soy, mirin and saké.
 
 Stir so that everything is well coated. Cover with a lid, one slightly smaller than the pot this time, if you have one, so it sits directly on the braised chicken and vegetables. This will give the braise a more intense flavour and allow the chicken and vegetables to take in maximum flavour. Simmer for 15-20 minutes or until the chicken and vegetables are tender. Check for salt and sugar and season accordingly. Scatter with mizuna, if using, and serve with steamed rice.
-
