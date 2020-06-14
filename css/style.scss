@@ -157,7 +157,7 @@ h1, h2, h3, h4,
 .h0 {
   font-size: 2.25rem;
   font-size: 3rem;
-  letter-spacing: -0.03rem;
+  //letter-spacing: -0.03rem;
   line-height: 1.2;
   font-weight: 500;
 }
@@ -236,13 +236,14 @@ h4, .h4 {
   @media only screen and (min-width: 60em) {
     grid-template-columns: 1fr 2fr;
     padding: 0 3rem;
+    padding: 0 8vw;
   }
   &.-spaced {
     margin-bottom: 2rem;
   }
   &.-alternate1{
     @media only screen and (min-width: 60em) {
-      grid-template-columns: 3fr 1fr;
+      grid-template-columns: 4fr 1fr;
     }
   }
   &.-alternate2{
