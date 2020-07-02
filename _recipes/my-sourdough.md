@@ -11,10 +11,10 @@ ingredients:
 ---
 
 #### Feed starter
-When to feed depends on a lot of variables like the liveliness of the starter and the ambient temperature, but you want to time it so that the starter is at its peak (at least double in size, rounded top, passes the float test) when you start the autolyse.  
+When to feed depends on a lot of variables like the liveliness of the starter and the ambient temperature, but you want to time it so that the starter is at its peak (at least double in size, rounded top, passes the float test) when you mix. If its been in the fridge I'll usually pop it out a day or so before I plan to bake and make sure it gets a couple of feeds a day while it finds its feet.
 
 #### Mix & fold
-Mix everything. Stretch and work the dough as you mix until it develops some structure. Can use slap folds or Rubaud or whatever methods works with the least amount of mess and fuss.
+Dissolve the starter in the water and combine with the dry ingredients. Stretch and work the dough as you mix until it develops some structure. Can use slap folds or Rubaud or whatever methods works with the least amount of mess and fuss.
 
 Cover the bowl and place in a warm place for two to three hours, with a cycle or stretch and fold every half hour.
 
@@ -40,7 +40,7 @@ When it looks done you can temper the loaf for an extra crispy crust by leaving 
 
 **0000** &nbsp;Feed starter
 
-**830—1200** &nbsp;Mix & fold
+**0830—1200** &nbsp;Mix & fold
 
 **1200—1430** &nbsp;Bulk ferment
 
