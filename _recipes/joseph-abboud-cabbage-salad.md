@@ -1,5 +1,5 @@
 ---
-title: Cabbage mint and carraway salad
+title: Cabbage, mint and caraway salad
 description: By Joseph Abboud from Rumi, Melbourne.
 author: Joseph Abboud
 source: https://www.gourmettraveller.com.au/recipes/chefs-recipes/baby-snapper-with-cabbage-mint-and-caraway-salad-8002
