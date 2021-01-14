@@ -9,14 +9,11 @@ ingredients:
 - 80g wholemeal flour
 - 1½ tsp yeast (7g)
 - 2 tsp salt
-- 1 tsp sugar
 - 1 tbsp olive oil
 - 160ml water
 ---
 
-Mix bread flour and salt together in a bowl
-
-In a separate bowl mix the sugar, water, olive oil, and yeast. Leave this aside for 5-10 mins and wait for bubbles to appear.
+Mix bread flour and salt together in a bowl. In a separate bowl mix the water, olive oil, and yeast.
 
 Mix the wet ingredients into the dry to form a rough dough. Knead for four minutes slowly and once everything is mixed knead this for another four minutes but faster than the first time.
 
