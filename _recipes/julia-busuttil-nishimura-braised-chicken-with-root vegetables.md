@@ -7,11 +7,11 @@ serves: Serves 4
 ingredients:
 - ¼ cup bonito flakes
 - 650g skinless chicken thigh fillets
-- 1tbsp vegetable oil
+- 1 tablespoon vegetable oil
 - 2 brown onions
 - 2 carrots
 - 2 waxy potatoes, such as Nicola
-- 1 tbsp brown sugar
+- 1 tablespoon brown sugar
 - ¼ cup soy sauce
 - ¼ cup mirin
 - ¼ cup saké

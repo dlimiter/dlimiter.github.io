@@ -7,9 +7,9 @@ ingredients:
 - 1 cup self raising flour
 - 1 large egg
 - ½ cup milk
-- 1 tbsp sugar
+- 1 tablespoon sugar
 - 25g butter
-- 1 tbsp (rounded) golden syrup
+- 1 tablespoon (rounded) golden syrup
 ---
 
 Measure golden syrup into bowl with hot tablespoon. Add butter and warm slightly in microwave to soften. Mix in sugar, milk and egg.

@@ -5,7 +5,7 @@ author: Joseph Abboud
 source: https://www.gourmettraveller.com.au/recipes/chefs-recipes/baby-snapper-with-cabbage-mint-and-caraway-salad-8002
 serves: Serves 4
 ingredients:
-- 1 tbsp caraway seeds
+- 1 tablespoons caraway seeds
 - 50 ml lemon juice
 - 60 ml olive oil (¼ cup)
 - ¼ cabbage (about 600gm)

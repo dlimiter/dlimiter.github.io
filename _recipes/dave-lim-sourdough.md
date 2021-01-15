@@ -7,7 +7,7 @@ serves: Makes one small loaf
 ingredients:
 - 210g spring water
 - 325g bread flour
-- 2 tsp salt
+- 2 teaspoons salt
 - 75g fed starter
 ---
 

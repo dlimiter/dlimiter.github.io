@@ -7,9 +7,9 @@ serves: Makes two 12 inch pizzas
 ingredients:
 - 153g 00 flour
 - 153g all purpose flour
-- 1 tsp fine salt (8g)
-- ¾ tsp active dry yeast (2g)
-- 1 tsp extra virgin olive oil (1 tsp)
+- 1 teaspoon fine salt (8g)
+- ¾ teaspoon active dry yeast (2g)
+- 1 teaspoon extra virgin olive oil (1 tsp)
 - 200g lukewarm tap water
 
 ---

@@ -7,7 +7,7 @@ source: http://www.haaretz.com/my-private-chef-an-edible-bouquet-1.202102
 serves: Serves 4
 ingredients:
 - 1 whole medium-size, fresh, white cauliflower, florets tightly packed and covered in bright green leaves
-- 3 tbsp. olive oil
+- 3 tablespoons olive oil
 - mineral water
 - sea salt
 ---

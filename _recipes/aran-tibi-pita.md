@@ -7,9 +7,9 @@ serves: Makes 4 Pita
 ingredients:
 - 170g bread flour
 - 80g wholemeal flour
-- 1½ tsp yeast (7g)
-- 2 tsp salt
-- 1 tbsp olive oil
+- 1½ teaspoons yeast (7g)
+- 2 teaspoons salt
+- 1 tablespoons olive oil
 - 160ml water
 ---
 

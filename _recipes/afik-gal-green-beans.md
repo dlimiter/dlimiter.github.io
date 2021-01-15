@@ -9,8 +9,8 @@ ingredients:
 - ½ garlic clove, grated/crushed
 - Zest of ½ lemon
 - Juice of ½ lemon
-- 2 tbs olive oil
-- ½ tsp sea salt
+- 2 tablespoon olive oil
+- ½ teaspoon sea salt
 - 5L water with 200g sea salt
 ---
 

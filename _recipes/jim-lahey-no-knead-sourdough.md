@@ -6,7 +6,7 @@ source: https://cooking.nytimes.com/recipes/1018028-sourdough-no-knead-bread
 serves: Makes 1 loaf
 ingredients:
 - 425 grams bread flour
-- 1½ tsp salt
+- 1½ teaspoons salt
 - 180 grams fed sourdough starter (or ¼ tsp instant yeast for the original recipe)
 - 300g water
 ---

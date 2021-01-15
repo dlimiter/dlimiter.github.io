@@ -7,7 +7,7 @@ serves: 1 jar
 ingredients:
 - 1 cup white wine vinegar
 - ¼ cup sugar
-- 1 Tbsp. kosher salt
+- 1 tablespoon kosher salt
 - 4 garlic cloves, crushed
 - 6 Fresno chiles, thinly sliced crosswise into rings
 ---

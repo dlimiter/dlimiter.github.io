@@ -10,8 +10,8 @@ ingredients:
 - 3 garlic cloves, finely chopped
 - 1cm piece ginger, peeled and finely chopped
 - 1 stalk spring onion, finely chopped
-- 3 tsp soy sauce
-- 1 tbsp Shaoxing wine
+- 3 teaspoon soy sauce
+- 1 tablespoon Shaoxing wine
 - 1 tsp sesame oil
 - 1 small pinch ground white pepper
 ---
