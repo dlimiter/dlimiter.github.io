@@ -24,10 +24,10 @@ Spritz bench top with water. Turn out dough and stretch-fold around 6 times. Ret
 Spritz bench top with water. Turn out dough and stretch-fold around 6 times. Return to bowl, cover leave for 1 hour.
 
 ##### Pre-shape and bench rest
-Lightly flour bench so dough doesn't stick. Turn out dough and fold into a loose boule shape. Cover and bench rest for a final hour.
+Lightly flour bench so dough doesn't stick. Turn out dough (if making a bigger batch, this is when you separate into loaves by weight) and fold into a loose boule shape. Cover and bench rest for a final hour.
 
 ##### Shape
-Turn out the dough. (If making a bigger batch, this is when you separate into loaves by weight.) Delicately flatten dough out a bit and do final shaping. Transfer to proving basket and leave in fridge overnight.
+Delicately flatten dough out the pre-shaped loaves a bit and do final shaping. Transfer to proving basket and leave in fridge overnight.
 
 #### Day 2
 Prepare oven with baking steel and a metal baking tray on the bottom. Preheat for about an hour at maximum temperature.
