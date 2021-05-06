@@ -141,12 +141,12 @@ h1, h2,
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 500;
 }
 
-h3, h4,
-.h3, .h4 {
-  font-weight: 600;
+h3, h4, h5,
+.h3, .h4, .h5 {
+  font-weight: 500;
 }
 
 h1, h2, h3, h4, h5
@@ -231,6 +231,7 @@ h5, .h5 {
 .resumeitem__date {
   @extend .mono;
   text-transform: uppercase;
+  font-size: 0.7rem;
   margin: 0 0 0.5rem 0;
 }
 
