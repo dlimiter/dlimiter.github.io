@@ -36,18 +36,18 @@
   @return mix(black, $color, $percentage);
 }
 
-$pink: #f1bec0;
+$mint: #AAF0D1;
 $charcoal: #333;
 $text: tint($charcoal, 10%);
 $text-display: tint($charcoal, 20%);
 $nav-width: 250px;
 
-$pink-text: shade($pink, 12%);
-$pink-text-2: shade($pink, 40%);
-$hairline: 1px solid tint($pink, 20%);
+$mint-text: shade($mint, 12%);
+$mint-text-2: shade($mint, 40%);
+$hairline: 1px solid tint($mint, 20%);
 
-$link-hover-1: tint($pink, 40%);
-$link-hover-2: tint($pink, 60%);
+$link-hover-1: tint($mint, 40%);
+$link-hover-2: tint($mint, 60%);
 
 //$base-font-size: 20px;
 $base-font-size: 1.4vw;
@@ -86,7 +86,7 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 300;
   color: $text;
-  //background: tint($pink, 80%);
+  //background: tint($mint, 80%);
 }
 
 a {
@@ -114,7 +114,7 @@ a {
     transform: scaleY(.4) translateY(.3rem);
   }
   &:hover {
-    color: $pink-text-2;
+    color: $mint-text-2;
     &:before {
       transform: none;
       background: $link-hover-2;
@@ -363,7 +363,7 @@ h5, .h5 {
       transform-origin: center;
     }
     &:hover {
-      color: $pink-text-2;
+      color: $mint-text-2;
       &:before {
         transform: none;
         background: $link-hover-2;
@@ -378,7 +378,7 @@ h5, .h5 {
     // }
     // &:hover {
     //   background: $link-hover-2;
-    //   color: shade($pink-text, 5%);
+    //   color: shade($mint-text, 5%);
     //   transform: scale(1.2);
     // }
   }
@@ -430,7 +430,7 @@ h5, .h5 {
     transform-origin: center;
   }
   &:hover {
-    color: $pink-text-2;
+    color: $mint-text-2;
     &:before {
       transform: none;
       background: $link-hover-2;
@@ -465,7 +465,7 @@ a.nav__logo {
     transform-origin: center;
   }
   &:hover {
-    color: $pink-text-2;
+    color: $mint-text-2;
     &:before {
       transform: none;
       background: $link-hover-2;
@@ -481,9 +481,9 @@ a.nav__logo {
 
 .cooksnote {
   margin: 2rem 0 3rem;
-  $col: tint($pink, 70%);
+  $col: tint($mint, 70%);
   border-radius: 5px;
-  color: shade($pink, 30%);
+  color: shade($mint, 30%);
   position: relative;
   padding-top: 1rem;
 

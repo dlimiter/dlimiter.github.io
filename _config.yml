@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Dave Lim
-email: dave@dlimiter.net
+title: Muhammad Vaid
+email: movaid7@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal website of Dave Lim.
+  Personal website of Muhammad Vaid.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: dlimiter
-#github_username:  dlimiter
+# twitter_username: movaid7
+github_username:  movaid7
 sass:
     sass_dir: _sass
 # Build settings
