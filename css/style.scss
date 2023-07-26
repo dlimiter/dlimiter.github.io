@@ -230,9 +230,18 @@ h5, .h5 {
 
 .resumeitem__date {
   @extend .mono;
-  text-transform: uppercase;
-  font-size: 0.7rem;
+  //text-transform: uppercase;
+  font-size: .9rem;
   margin: 0 0 0.5rem 0;
+}
+
+.-nodescription + .resumeitem {
+  margin-bottom: 0;
+}
+
+.resumeitem__role {
+  font-weight: 500;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .container {
