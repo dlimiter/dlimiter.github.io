@@ -37,17 +37,20 @@
 }
 
 $pink: #f1bec0;
-$charcoal: #333;
+$olive: #babaa6;
+$yellow: #FFCA4D;
+$primary: $yellow;
+$charcoal: #2F2438;
 $text: tint($charcoal, 10%);
 $text-display: tint($charcoal, 20%);
 $nav-width: 250px;
 
-$pink-text: shade($pink, 12%);
-$pink-text-2: shade($pink, 40%);
-$hairline: 1px solid tint($pink, 20%);
+$primary-text: shade($primary, 12%);
+$primary-text-2: shade($primary, 40%);
+$hairline: 1px solid tint($primary, 20%);
 
-$link-hover-1: tint($pink, 40%);
-$link-hover-2: tint($pink, 60%);
+$link-hover-1: tint($primary, 40%);
+$link-hover-2: tint($primary, 60%);
 
 //$base-font-size: 20px;
 $base-font-size: 1.4vw;
@@ -114,7 +117,7 @@ a {
     transform: scaleY(.4) translateY(.3rem);
   }
   &:hover {
-    color: $pink-text-2;
+    color: $primary-text-2;
     &:before {
       transform: none;
       background: $link-hover-2;
@@ -372,7 +375,7 @@ h5, .h5 {
       transform-origin: center;
     }
     &:hover {
-      color: $pink-text-2;
+      color: $primary-text-2;
       &:before {
         transform: none;
         background: $link-hover-2;
@@ -439,7 +442,7 @@ h5, .h5 {
     transform-origin: center;
   }
   &:hover {
-    color: $pink-text-2;
+    color: $primary-text-2;
     &:before {
       transform: none;
       background: $link-hover-2;
@@ -474,7 +477,7 @@ a.nav__logo {
     transform-origin: center;
   }
   &:hover {
-    color: $pink-text-2;
+    color: $primary-text-2;
     &:before {
       transform: none;
       background: $link-hover-2;
@@ -490,9 +493,9 @@ a.nav__logo {
 
 .cooksnote {
   margin: 2rem 0 3rem;
-  $col: tint($pink, 70%);
+  $col: tint($primary, 70%);
   border-radius: 5px;
-  color: shade($pink, 30%);
+  color: shade($primary, 30%);
   position: relative;
   padding-top: 1rem;
 
