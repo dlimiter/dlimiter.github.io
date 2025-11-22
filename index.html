@@ -2,20 +2,82 @@
 layout: default
 ---
 
-<div class="container -alternate1">
-  <p class="about">
-    Hi. I’m Dave, a multidisciplinary design leader specialising in digital product design
-  </p>
-  <div>
+<div class="container">
+  <div class="home-hero">
+    <h1 class="home-title">Hi, I'm Dave</h1>
+    <p class="home-intro">
+      A multidisciplinary design leader specialising in digital product design.
+    </p>
+    <p class="home-description">
+      I'm currently working as a Director of Design at <a href="https://www.cultureamp.com" target="_blank" rel="noopener">Culture Amp</a>, where I lead design and product strategy across multiple teams.
+    </p>
+    <div class="home-links">
+      <a href="{{ '/about' | relative_url }}" class="home-link">Learn more about me</a>
+    </div>
   </div>
 </div>
-<div class="container recipe">
-  <div></div>
-  <div>
-    <p class="lede">
-     I'm currently working as a Director of Design at <a href="https://www.cultureamp.com">Culture Amp</a>.
-     
-    </p
 
-  </div>
-</div>
+<style>
+.home-hero {
+  max-width: var(--max-width-3xl);
+  margin: 0 auto;
+  padding: var(--space-16) 0;
+}
+
+.home-title {
+  font-size: var(--font-size-5xl);
+  margin-bottom: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .home-title {
+    font-size: var(--font-size-6xl);
+  }
+}
+
+.home-intro {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  margin-bottom: var(--space-6);
+  line-height: var(--line-height-tight);
+}
+
+@media (min-width: 768px) {
+  .home-intro {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+.home-description {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-8);
+  line-height: var(--line-height-relaxed);
+}
+
+@media (min-width: 768px) {
+  .home-description {
+    font-size: var(--font-size-xl);
+  }
+}
+
+.home-links {
+  margin-top: var(--space-8);
+}
+
+.home-link {
+  display: inline-block;
+  padding: var(--space-3) var(--space-6);
+  background-color: var(--color-gray-900);
+  color: var(--color-white);
+  border-radius: 0.5rem;
+  font-weight: var(--font-weight-medium);
+  transition: background-color 0.2s ease;
+}
+
+.home-link:hover {
+  background-color: var(--color-gray-700);
+  color: var(--color-white);
+}
+</style>

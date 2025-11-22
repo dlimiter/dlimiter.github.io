@@ -1,0 +1,136 @@
+---
+layout: default
+---
+
+<article class="project">
+  <header class="project-header">
+    <div class="project-back">
+      <a href="/projects/" class="back-link">&larr; All projects</a>
+    </div>
+
+    {% if page.title %}
+      <h1 class="project-title">{{ page.title }}</h1>
+    {% endif %}
+
+    {% if page.description %}
+      <p class="project-description">{{ page.description }}</p>
+    {% endif %}
+
+    {% if page.date or page.tags %}
+      <div class="project-meta">
+        {% if page.date %}
+          <time class="project-date">{{ page.date | date: "%B %Y" }}</time>
+        {% endif %}
+        {% if page.tags %}
+          <div class="project-tags">
+            {% for tag in page.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+  </header>
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+</article>
+
+<style>
+.project {
+  max-width: var(--max-width-3xl);
+  margin: 0 auto;
+}
+
+.project-back {
+  margin-bottom: var(--space-6);
+}
+
+.back-link {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--color-text);
+}
+
+.project-header {
+  margin-bottom: var(--space-12);
+}
+
+.project-title {
+  margin-bottom: var(--space-4);
+}
+
+.project-description {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-6);
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+}
+
+.project-date {
+  font-variant-numeric: tabular-nums;
+}
+
+.project-tags {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  padding: var(--space-1) var(--space-3);
+  background-color: var(--color-gray-100);
+  color: var(--color-text-light);
+  border-radius: 0.25rem;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.project-content {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+.project-content h2 {
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-6);
+}
+
+.project-content h3 {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-4);
+}
+
+/* Support for full-width project content like interactive demos */
+.project-content .full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.project-content iframe {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+}
+</style>

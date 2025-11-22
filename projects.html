@@ -1,0 +1,105 @@
+---
+layout: page
+title: Projects
+description: Small experiments, tools, and vibe-coded projects.
+---
+
+<div class="projects-list">
+  {% if site.projects %}
+    {% assign published_projects = site.projects | where: "published", true | sort: "date" | reverse %}
+  {% else %}
+    {% assign published_projects = "" | split: "" %}
+  {% endif %}
+
+  {% if published_projects.size > 0 %}
+    {% for project in published_projects %}
+      <article class="project-card">
+        <h3 class="project-card-title">
+          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        </h3>
+
+        {% if project.description %}
+          <p class="project-card-description">{{ project.description }}</p>
+        {% endif %}
+
+        <div class="project-card-meta">
+          {% if project.date %}
+            <time class="project-card-date">{{ project.date | date: "%B %Y" }}</time>
+          {% endif %}
+
+          {% if project.tags %}
+            <div class="project-card-tags">
+              {% for tag in project.tags %}
+                <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  {% else %}
+    <p class="empty-state">No projects published yet. Check back soon!</p>
+  {% endif %}
+</div>
+
+<style>
+.projects-list {
+  margin-top: var(--space-8);
+}
+
+.project-card {
+  padding-bottom: var(--space-8);
+  margin-bottom: var(--space-8);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-card:last-child {
+  border-bottom: none;
+}
+
+.project-card-title {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-3);
+}
+
+.project-card-title a {
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+
+.project-card-title a:hover {
+  color: var(--color-text-light);
+}
+
+.project-card-description {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-4);
+}
+
+.project-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+}
+
+.project-card-date {
+  font-variant-numeric: tabular-nums;
+}
+
+.project-card-tags {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.empty-state {
+  color: var(--color-text-light);
+  font-style: italic;
+  margin-top: var(--space-8);
+}
+</style>

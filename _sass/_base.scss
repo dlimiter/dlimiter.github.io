@@ -1,0 +1,124 @@
+// Base styles
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: var(--line-height-normal);
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-4);
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+
+  @media (min-width: $breakpoint-md) {
+    font-size: var(--font-size-5xl);
+  }
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+
+  @media (min-width: $breakpoint-md) {
+    font-size: var(--font-size-4xl);
+  }
+}
+
+h3 {
+  font-size: var(--font-size-2xl);
+
+  @media (min-width: $breakpoint-md) {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+h4 {
+  font-size: var(--font-size-xl);
+}
+
+h5 {
+  font-size: var(--font-size-lg);
+}
+
+h6 {
+  font-size: var(--font-size-base);
+}
+
+p {
+  margin-bottom: var(--space-4);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--color-link-hover);
+  }
+}
+
+strong {
+  font-weight: var(--font-weight-semibold);
+}
+
+em {
+  font-style: italic;
+}
+
+code {
+  font-family: var(--font-family-mono);
+  font-size: 0.9em;
+  background-color: var(--color-gray-100);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+// Lists
+ul, ol {
+  margin-bottom: var(--space-4);
+  padding-left: var(--space-6);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li {
+  margin-bottom: var(--space-2);
+}
+
+// Container
+.container {
+  width: 100%;
+  max-width: var(--max-width-4xl);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-6);
+  padding-right: var(--space-6);
+
+  @media (min-width: $breakpoint-md) {
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
+}

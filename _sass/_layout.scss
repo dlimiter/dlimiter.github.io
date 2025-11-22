@@ -1,0 +1,132 @@
+// Header
+.site-header {
+  padding: var(--space-8) 0;
+  border-bottom: 1px solid var(--color-border);
+
+  @media (min-width: $breakpoint-md) {
+    padding: var(--space-12) 0;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+
+  &:hover {
+    color: var(--color-text);
+  }
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.nav-link {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-light);
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--color-text);
+  }
+}
+
+// Main content
+.main-content {
+  min-height: calc(100vh - 400px);
+  padding: var(--space-12) 0;
+
+  @media (min-width: $breakpoint-md) {
+    padding: var(--space-20) 0;
+  }
+}
+
+// Footer
+.site-footer {
+  padding: var(--space-12) 0;
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-20);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer-text {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.footer-link {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--color-text);
+  }
+}
+
+// Page
+.page {
+  max-width: var(--max-width-3xl);
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: var(--space-12);
+
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: var(--space-16);
+  }
+}
+
+.page-title {
+  margin-bottom: var(--space-4);
+}
+
+.page-description {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}
+
+.page-content {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text);
+
+  h2 {
+    margin-top: var(--space-12);
+    margin-bottom: var(--space-6);
+  }
+
+  h3 {
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-4);
+  }
+}
