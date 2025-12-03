@@ -70,13 +70,17 @@
   }
 
   a {
-    text-decoration: underline;
-    text-decoration-thickness: 0.012rem;
-    text-underline-offset: 0.25rem;
+    // text-decoration: underline;
+    //text-decoration-thickness: 0.012rem;
+    // text-decoration-thickness: 0.05rem;
+    // text-decoration-style: solid;
+    // text-underline-offset: 0.25rem;
+    background: #ffffff1e;
     position: relative;
     color: #ffffff;
     display: inline-block;
-    transition: text-decoration 0.3s ease;
+    // transition: text-decoration 0.2s ease;
+    transition: background 0.2s ease;
 
     &::before {
       content: attr(aria-label);
@@ -84,7 +88,7 @@
       left: 0;
       top: 0;
       background: linear-gradient(90deg, #FF6B9D 0%, #C471ED 100%);
-      background-clip: text;
+      background-clip: text ;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       opacity: 0;
@@ -97,7 +101,9 @@
     }
 
     &:hover {
-      text-decoration: none;
+      // text-decoration: none;
+      // text-decoration-style: wavy;
+      background: transparent;
     }
   }
 }
