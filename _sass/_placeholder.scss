@@ -1,4 +1,11 @@
-// Placeholder page styles
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
 .placeholder-page {
   margin: 0;
   padding: 0;
@@ -8,9 +15,9 @@
 }
 
 .site-wrapper {
-  max-width: 1400px;
+  //max-width: 1400px;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 4rem;
 }
 
 .logo-mark {
@@ -23,26 +30,14 @@
   gap: 4rem;
 
   @media (min-width: 1024px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: minmax(0,400px) auto auto;
+    justify-content: space-between;
   }
 }
 
 .column {
   display: flex;
   flex-direction: column;
-}
-
-.column-left {
-  text-align: left;
-}
-
-.column-right {
-  text-align: right;
-
-  @media (max-width: 1023px) {
-    text-align: left;
-  }
 }
 
 .section-title {
@@ -54,14 +49,18 @@
   text-transform: uppercase;
 }
 
+.arrow {
+  font-family: 'Inter', sans-serif;
+}
+
 .section-content {
   font-family: 'Inconsolata', monospace;
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.4;
 
   p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 
     &:last-child {
       margin-bottom: 0;
@@ -89,7 +88,7 @@
 
 .work-period {
   margin-bottom: 0.25rem;
-  opacity: 0.7;
+  //opacity: 0.7;
 }
 
 .work-title {
@@ -97,7 +96,7 @@
 }
 
 .image-container {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .profile-image {

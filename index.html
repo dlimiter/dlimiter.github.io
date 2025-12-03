@@ -14,61 +14,85 @@ layout: default
   <!-- Main content grid -->
   <div class="content-grid">
     <!-- Left column: About -->
-    <div class="column column-left">
+    <div class="column">
       <h2 class="section-title">DLIMITER (dee-LIM-it-err)</h2>
 
       <div class="section-content">
         <p>
           My name is David Lim. I'm a he/him designer living in Melbourne, Australia.
-          I have 15+ years experience designing and building digital products.
+          I have 15+ years experience designing and building digital products and experiences.
         </p>
       </div>
 
       <div class="image-container">
-        <img src="{{ '/assets/images/super_dave.jpg' | relative_url }}" alt="Super Dave" class="profile-image">
+        <img src="{{ '/assets/images/super_dave.jpg' | relative_url }}" alt="Dave" class="profile-image" id="profile-image">
       </div>
     </div>
 
     <!-- Middle column: Work -->
-    <div class="column column-right">
+    <div class="column">
       <h2 class="section-title">WORK</h2>
 
       <div class="section-content">
         <div class="work-item">
-          <p class="work-period">2022–2024 / Culture Amp</p>
-          <p class="work-title">Director of design</p>
+          <div class="work-period">2022–2024 / 
+            <a href="https://www.cultureamp.com/" target="_blank" rel="noopener">Culture Amp <span class="arrow">→</span>  </a>
+          </div>
+          <div class="work-title">Director of design</div>
         </div>
 
         <div class="work-item">
-          <p class="work-period">2014–2022 / Culture Amp</p>
-          <p class="work-title">Principal/Lead/Senior product designer</p>
+          <div class="work-period">2014–2022 / 
+            <a href="https://www.cultureamp.com/" target="_blank" rel="noopener">Culture Amp <span class="arrow">→</span>  </a>
+          </div>
+          <div class="work-title">Principal/Lead/Senior product designer</div>
         </div>
 
         <div class="work-item">
-          <p class="work-period">2013–2014 / Symplicit</p>
-          <p class="work-title">Senior experience designer</p>
+          <div class="work-period">2013–2014 / 
+            <a href="https://symplicit.com.au/" target="_blank" rel="noopener">Symplicit <span class="arrow">→</span>  </a>
+          </div>
+          <div class="work-title">Senior experience designer</div>
         </div>
 
         <div class="work-item">
-          <p class="work-period">2012–2013 / Unico</p>
-          <p class="work-title">Engineering team lead</p>
+          <div class="work-period">2012–2013 / Unico</div>
+          <div class="work-title">Engineering team lead</div>
         </div>
 
         <div class="work-item">
-          <p class="work-period">2005–2012 / Unico</p>
-          <p class="work-title">Software engineer and consultant</p>
+          <div class="work-period">2005–2012 / Unico</div>
+          <div class="work-title">Software engineer and consultant</div>
         </div>
       </div>
     </div>
 
     <!-- Right column: Contact -->
-    <div class="column column-right">
+    <div class="column">
       <h2 class="section-title">CONTACT</h2>
 
       <div class="section-content">
-        <p><a href="https://www.linkedin.com/in/davelimiter" target="_blank" rel="noopener">LinkedIn ↗</a></p>
-        <p><a href="mailto:{{ site.email }}">Email ↗</a></p>
+        <p><a href="https://www.linkedin.com/in/dlimiter" target="_blank" rel="noopener">LinkedIn <span class="arrow">→</span></a></p>
+        <p><a href="mailto:{{ site.email }}">Email <span class="arrow">→</span></a></p>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  // Randomize profile image on page load
+  (function() {
+    const images = [
+      '{{ "/assets/images/chef_dave.jpg" | relative_url }}',
+      '{{ "/assets/images/sports_dave.jpg" | relative_url }}',
+      '{{ "/assets/images/super_dave.jpg" | relative_url }}'
+    ];
+
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    const imgElement = document.getElementById('profile-image');
+
+    if (imgElement) {
+      imgElement.src = randomImage;
+    }
+  })();
+</script>
