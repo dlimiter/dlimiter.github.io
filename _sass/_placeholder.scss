@@ -1,0 +1,107 @@
+// Placeholder page styles
+.placeholder-page {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.site-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.logo-mark {
+  margin-bottom: 4rem;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-left {
+  text-align: left;
+}
+
+.column-right {
+  text-align: right;
+
+  @media (max-width: 1023px) {
+    text-align: left;
+  }
+}
+
+.section-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.section-content {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  p {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.work-item {
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.work-period {
+  margin-bottom: 0.25rem;
+  opacity: 0.7;
+}
+
+.work-title {
+  margin-bottom: 0;
+}
+
+.image-container {
+  margin-top: 3rem;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}

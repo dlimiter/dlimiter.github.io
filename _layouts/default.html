@@ -10,15 +10,9 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Inconsolata:wght@300;400&display=swap" rel="stylesheet">
 </head>
-<body>
-  {% include header.html %}
-
-  <main class="main-content">
-    {{ content }}
-  </main>
-
-  {% include footer.html %}
+<body class="placeholder-page">
+  {{ content }}
 </body>
 </html>

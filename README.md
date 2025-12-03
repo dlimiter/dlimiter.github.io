@@ -29,7 +29,7 @@ The site automatically deploys to GitHub Pages when changes are pushed to the `m
 ### Custom Domain
 
 The site uses a custom domain (`dlimiter.net`) configured via the `CNAME` file. GitHub Pages automatically handles SSL/TLS certificates.
-
+   
 
 ## License
 

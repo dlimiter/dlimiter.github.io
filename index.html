@@ -2,82 +2,73 @@
 layout: default
 ---
 
-<div class="container">
-  <div class="home-hero">
-    <h1 class="home-title">Hi, I'm Dave</h1>
-    <p class="home-intro">
-      A multidisciplinary design leader specialising in digital product design.
-    </p>
-    <p class="home-description">
-      I'm currently working as a Director of Design at <a href="https://www.cultureamp.com" target="_blank" rel="noopener">Culture Amp</a>, where I lead design and product strategy across multiple teams.
-    </p>
-    <div class="home-links">
-      <a href="{{ '/about' | relative_url }}" class="home-link">Learn more about me</a>
+<div class="site-wrapper">
+  <!-- Logo mark -->
+  <div class="logo-mark">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="19" stroke="white" stroke-width="2"/>
+      <text x="20" y="27" font-family="Inter" font-size="18" font-weight="600" fill="white" text-anchor="middle">DL</text>
+    </svg>
+  </div>
+
+  <!-- Main content grid -->
+  <div class="content-grid">
+    <!-- Left column: About -->
+    <div class="column column-left">
+      <h2 class="section-title">DLIMITER (dee-LIM-it-err)</h2>
+
+      <div class="section-content">
+        <p>
+          My name is David Lim. I'm a he/him designer living in Melbourne, Australia.
+          I have 15+ years experience designing and building digital products.
+        </p>
+      </div>
+
+      <div class="image-container">
+        <img src="{{ '/assets/images/super_dave.jpg' | relative_url }}" alt="Super Dave" class="profile-image">
+      </div>
+    </div>
+
+    <!-- Middle column: Work -->
+    <div class="column column-right">
+      <h2 class="section-title">WORK</h2>
+
+      <div class="section-content">
+        <div class="work-item">
+          <p class="work-period">2022–2024 / Culture Amp</p>
+          <p class="work-title">Director of design</p>
+        </div>
+
+        <div class="work-item">
+          <p class="work-period">2014–2022 / Culture Amp</p>
+          <p class="work-title">Principal/Lead/Senior product designer</p>
+        </div>
+
+        <div class="work-item">
+          <p class="work-period">2013–2014 / Symplicit</p>
+          <p class="work-title">Senior experience designer</p>
+        </div>
+
+        <div class="work-item">
+          <p class="work-period">2012–2013 / Unico</p>
+          <p class="work-title">Engineering team lead</p>
+        </div>
+
+        <div class="work-item">
+          <p class="work-period">2005–2012 / Unico</p>
+          <p class="work-title">Software engineer and consultant</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column: Contact -->
+    <div class="column column-right">
+      <h2 class="section-title">CONTACT</h2>
+
+      <div class="section-content">
+        <p><a href="https://www.linkedin.com/in/davelimiter" target="_blank" rel="noopener">LinkedIn ↗</a></p>
+        <p><a href="mailto:{{ site.email }}">Email ↗</a></p>
+      </div>
     </div>
   </div>
 </div>
-
-<style>
-.home-hero {
-  max-width: var(--max-width-3xl);
-  margin: 0 auto;
-  padding: var(--space-16) 0;
-}
-
-.home-title {
-  font-size: var(--font-size-5xl);
-  margin-bottom: var(--space-6);
-}
-
-@media (min-width: 768px) {
-  .home-title {
-    font-size: var(--font-size-6xl);
-  }
-}
-
-.home-intro {
-  font-size: var(--font-size-2xl);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text);
-  margin-bottom: var(--space-6);
-  line-height: var(--line-height-tight);
-}
-
-@media (min-width: 768px) {
-  .home-intro {
-    font-size: var(--font-size-3xl);
-  }
-}
-
-.home-description {
-  font-size: var(--font-size-lg);
-  color: var(--color-text-light);
-  margin-bottom: var(--space-8);
-  line-height: var(--line-height-relaxed);
-}
-
-@media (min-width: 768px) {
-  .home-description {
-    font-size: var(--font-size-xl);
-  }
-}
-
-.home-links {
-  margin-top: var(--space-8);
-}
-
-.home-link {
-  display: inline-block;
-  padding: var(--space-3) var(--space-6);
-  background-color: var(--color-gray-900);
-  color: var(--color-white);
-  border-radius: 0.5rem;
-  font-weight: var(--font-weight-medium);
-  transition: background-color 0.2s ease;
-}
-
-.home-link:hover {
-  background-color: var(--color-gray-700);
-  color: var(--color-white);
-}
-</style>
