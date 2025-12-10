@@ -89,9 +89,8 @@
       position: absolute;
       bottom: 0; 
       left: 0; 
-      width: 100%;
       background-color: #FF6B9D;
-      height: 0.01rem;
+      height: .3px;
       transition: all 0.3s ease;
     }
     &::before {
