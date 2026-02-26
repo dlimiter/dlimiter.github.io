@@ -1,7 +1,7 @@
 :root {
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
-  font-size: 16px;
+  font-size: 17px;
 }
 @supports (font-variation-settings: normal) {
   :root { font-family: InterVariable, sans-serif; }
@@ -25,17 +25,30 @@
 }
 
 .logo-mark {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .content-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 4rem;
+  
+  @media (min-width: 1024px) {
+    grid-template-columns: minmax(18rem,28rem) auto;
+    justify-content: space-between;
+    gap: 8rem;
+  }
+}
+
+.column-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 
   @media (min-width: 1024px) {
-    grid-template-columns: minmax(300px,450px) auto auto;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 6rem;
+
   }
 }
 
