@@ -1,8 +1,7 @@
 :root {
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
-  font-size: 17px;
-  font-size: clamp(16px, 1vw, 18px); 
+  font-size: clamp(16px, 1vw, 20px); 
 }
 @supports (font-variation-settings: normal) {
   :root { font-family: InterVariable, sans-serif; }
