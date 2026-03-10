@@ -72,10 +72,28 @@ html.dark-mode .placeholder-page {
 .logo-area:hover .logo-mark  { opacity: 0; }
 .logo-area:hover .theme-toggle { opacity: 1; }
 
-.icon-sun { display: none; }
+.toggle-icons {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  display: block;
+}
 
-html.dark-mode .icon-moon { display: none; }
-html.dark-mode .icon-sun  { display: block; }
+.icon-moon,
+.icon-sun {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+// Light mode: moon visible (dips CCW on exit), sun waiting CW
+.icon-moon { opacity: 1; transform: rotate(0deg); }
+.icon-sun  { opacity: 0; transform: rotate(20deg); }
+
+// Dark mode: sun visible (rises from CW), moon dipped CCW
+html.dark-mode .icon-moon { opacity: 0; transform: rotate(-20deg); }
+html.dark-mode .icon-sun  { opacity: 1; transform: rotate(0deg); }
 
 .content-grid {
   display: grid;
