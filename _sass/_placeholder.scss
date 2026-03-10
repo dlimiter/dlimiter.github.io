@@ -40,32 +40,37 @@ html.dark-mode .placeholder-page {
   }
 }
 
-.site-header-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+.logo-area {
+  position: relative;
+  width: 40px;
+  height: 40px;
   margin-bottom: 3rem;
 }
 
 .logo-mark {
-  margin-bottom: 0;
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
 }
 
 .theme-toggle {
+  position: absolute;
+  inset: 0;
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
   color: currentColor;
-  opacity: 0.35;
+  opacity: 0;
   transition: opacity 0.2s ease;
   display: flex;
   align-items: center;
-
-  &:hover {
-    opacity: 1;
-  }
+  justify-content: center;
 }
+
+.logo-area:hover .logo-mark  { opacity: 0; }
+.logo-area:hover .theme-toggle { opacity: 1; }
 
 .icon-moon { display: none; }
 
