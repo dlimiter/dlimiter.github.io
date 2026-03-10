@@ -72,10 +72,10 @@ html.dark-mode .placeholder-page {
 .logo-area:hover .logo-mark  { opacity: 0; }
 .logo-area:hover .theme-toggle { opacity: 1; }
 
-.icon-moon { display: none; }
+.icon-sun { display: none; }
 
-html.dark-mode .icon-sun  { display: none; }
-html.dark-mode .icon-moon { display: block; }
+html.dark-mode .icon-moon { display: none; }
+html.dark-mode .icon-sun  { display: block; }
 
 .content-grid {
   display: grid;
